@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"id": "makebgreatagain",
+	"version": "${version}",
+	"name": "MakeBGreatAgain",
+	"description": "Fixes the \"B: 0\" section in the F3 Screen",
+	"authors": [
+		"PhoenixStyle"
+	],
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			"me.phoenixstyle.makebgreatagain.MakeBGreatAgain"
+		],
+		"client": [
+			"me.phoenixstyle.makebgreatagain.MakeBGreatAgainClient"
+		]
+	},
+	"mixins": [
+		"makebgreatagain.mixins.json",
+		{
+			"config": "makebgreatagain.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
