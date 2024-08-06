@@ -3,6 +3,7 @@ package me.phoenixstyle.makebgreatagain.mixin.client;
 import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.client.render.*;
+import org.spongepowered.asm.mixin.Debug;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
@@ -12,15 +13,16 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import java.util.ArrayList;
 import java.util.List;
 
+@Debug(export = true)
 @Mixin(WorldRenderer.class)
 abstract class WorldRendererMixin {
     @Shadow
     private int blockEntityCount;
 
-@Inject(at = @At("HEAD"), method = "render")
-private void clearBlockEntityCountRenderMixin(CallbackInfo callbackInfo) {
-    blockEntityCount = 0;
-}
+    @Inject(at = @At("HEAD"), method = "render")
+    private void clearBlockEntityCountRenderMixin(CallbackInfo callbackInfo) {
+        blockEntityCount = 0;
+    }
 
     @ModifyExpressionValue(at = @At(value = "INVOKE",
             target = "Lnet/minecraft/client/render/chunk/ChunkBuilder$ChunkData;getBlockEntities()Ljava/util/List;"),
