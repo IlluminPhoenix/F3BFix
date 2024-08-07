@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "makebgreatagain",
+	"id": "f3bfix",
 	"version": "${version}",
-	"name": "MakeBGreatAgain",
+	"name": "F3BFix",
 	"description": "Fixes the \"B: 0\" section in the F3 Screen",
 	"authors": [
 		"PhoenixStyle"
@@ -10,16 +10,16 @@
 	"environment": "client",
 	"entrypoints": {
 		"main": [
-			"me.phoenixstyle.makebgreatagain.MakeBGreatAgain"
+			"me.phoenixstyle.F3BFix.F3BFix"
 		],
 		"client": [
-			"me.phoenixstyle.makebgreatagain.MakeBGreatAgainClient"
+			"me.phoenixstyle.F3BFix.F3BFixClient"
 		]
 	},
 	"mixins": [
-		"makebgreatagain.mixins.json",
+      "F3BFix.mixins.json",
 		{
-			"config": "makebgreatagain.client.mixins.json",
+			"config": "F3BFix.client.mixins.json",
 			"environment": "client"
 		}
 	],

@@ -1,4 +1,4 @@
-package me.phoenixstyle.makebgreatagain.mixin.client;
+package me.phoenixstyle.F3BFix.mixin.client;
 
 import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
 import net.minecraft.block.entity.BlockEntity;
@@ -10,7 +10,6 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Debug(export = true)

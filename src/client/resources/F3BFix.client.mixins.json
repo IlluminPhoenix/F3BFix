@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "me.phoenixstyle.makebgreatagain.mixin.client",
+  "package": "me.phoenixstyle.F3BFix.mixin.client",
   "compatibilityLevel": "JAVA_21",
   "injectors": {
     "defaultRequire": 1

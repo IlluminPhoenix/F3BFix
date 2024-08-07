@@ -1,8 +1,8 @@
-package me.phoenixstyle.makebgreatagain;
+package me.phoenixstyle.F3BFix;
 
 import net.fabricmc.api.ClientModInitializer;
 
-public class MakeBGreatAgainClient implements ClientModInitializer {
+public class F3BFixClient implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
 		// This entrypoint is suitable for setting up client-specific logic, such as rendering.

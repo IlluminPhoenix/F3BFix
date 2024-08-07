@@ -22,7 +22,7 @@ loom {
 	splitEnvironmentSourceSets()
 
 	mods {
-		"makebgreatagain" {
+		"F3BFix" {
 			sourceSet sourceSets.main
 			sourceSet sourceSets.client
 		}
